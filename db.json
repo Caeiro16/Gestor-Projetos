@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Website da Loja",
+      "description": "Criar o site institucional da loja online",
+      "tasks": [
+        {
+          "id": "1",
+          "title": "Desenhar o layout",
+          "description": "Criar o design das páginas principais",
+          "dueDate": "2026-10-20",
+          "status": "pendente"
+        },
+        {
+          "id": "2",
+          "title": "Configurar o domínio",
+          "description": "Comprar e configurar o domínio do site",
+          "dueDate": "2026-10-15",
+          "status": "concluída"
+        }
+      ]
+    }
+  ]
+}
