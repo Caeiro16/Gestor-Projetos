@@ -1,25 +1,19 @@
 {
   "projects": [
     {
-      "id": "1",
-      "name": "Website da Loja",
-      "description": "Criar o site institucional da loja online",
+      "id": "A6d9xAXbNxM",
+      "name": "pedro",
+      "description": "hgfds",
       "tasks": [
         {
-          "id": "1",
-          "title": "Desenhar o layout",
-          "description": "Criar o design das páginas principais",
-          "dueDate": "2026-10-20",
-          "status": "pendente"
-        },
-        {
-          "id": "2",
-          "title": "Configurar o domínio",
-          "description": "Comprar e configurar o domínio do site",
-          "dueDate": "2026-10-15",
+          "id": "1792235794701",
+          "title": "vbnm,",
+          "description": "hjmk,.",
+          "dueDate": "2026-09-27",
           "status": "concluída"
         }
       ]
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
