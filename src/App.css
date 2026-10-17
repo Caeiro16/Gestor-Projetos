@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.error {
+  color: red;
+}
+
+.task {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.task.done {
+  background-color: #e6f4ea;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+}
