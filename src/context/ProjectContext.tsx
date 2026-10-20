@@ -41,7 +41,6 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     setProjects(prev => prev.filter(p => p.id !== id));
   }
 
-  // Cria uma cópia do projeto com a lista de tarefas nova e guarda na API
   async function saveTasks(projectId: string, newTasks: Task[]) {
     const project = projects.find(p => p.id === projectId);
     if (!project) return;

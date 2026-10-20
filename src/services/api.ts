@@ -4,7 +4,6 @@ import { ProjectData, TaskData } from "../models/interfaces";
 
 const API_URL = "http://localhost:3001";
 
-// Converte os dados da API (interfaces) em instâncias das classes
 function toProject(data: ProjectData): Project {
   const tasks = (data.tasks || []).map(
     (t: TaskData) => new Task(t.id, t.title, t.description, t.dueDate, t.status)

@@ -12,7 +12,6 @@ export function ProjectForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    // Validações
     if (name.trim().length < 3) {
       setError("O nome do projeto deve ter pelo menos 3 caracteres.");
       return;
@@ -24,11 +23,9 @@ export function ProjectForm() {
 
     setError("");
 
-    // O id é gerado a partir da data atual (simples e único o suficiente)
     const newProject = new Project(Date.now().toString(), name.trim(), description.trim());
     await addProject(newProject);
 
-    // Limpar o formulário
     setName("");
     setDescription("");
   }

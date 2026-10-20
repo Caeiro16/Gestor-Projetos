@@ -10,13 +10,11 @@ interface TaskListProps {
 export function TaskList({ project }: TaskListProps) {
   const { addTask, editTask, removeTask } = useProjects();
 
-  // Campos do formulário de nova tarefa
   const [title, setTitle] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [dueDate, setDueDate] = useState<string>("");
   const [error, setError] = useState<string>("");
 
-  // Estado da edição (editingTaskId = null significa que nenhuma tarefa está em edição)
   const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
   const [editTitle, setEditTitle] = useState<string>("");
   const [editDescription, setEditDescription] = useState<string>("");
@@ -60,7 +58,6 @@ export function TaskList({ project }: TaskListProps) {
     }
   }
 
-  // Entra em modo de edição e preenche os campos com os valores atuais
   function startEditing(task: Task) {
     setEditingTaskId(task.id);
     setEditTitle(task.title);
@@ -83,7 +80,6 @@ export function TaskList({ project }: TaskListProps) {
       return;
     }
 
-    // Mantém o id e o estado da tarefa, só muda título, descrição e data
     const updated = new Task(
       task.id,
       editTitle.trim(),

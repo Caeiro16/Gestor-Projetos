@@ -6,7 +6,6 @@ import { TaskList } from "./TaskList";import { ProjectProgress } from "./Project
 export function ProjectList() {
   const { projects, loading, editProject, removeProject } = useProjects();
 
-  // Guarda qual o projeto que está a ser editado (null = nenhum)
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editName, setEditName] = useState<string>("");
   const [editDescription, setEditDescription] = useState<string>("");
@@ -20,7 +19,6 @@ export function ProjectList() {
     return <p>Ainda não existem projetos. Cria o primeiro!</p>;
   }
 
-  // Entra em modo de edição e preenche os campos com os valores atuais
   function startEditing(project: Project) {
     setEditingId(project.id);
     setEditName(project.name);
@@ -51,7 +49,7 @@ export function ProjectList() {
   }
 
   async function handleDelete(project: Project) {
-    // Pede confirmação antes de apagar
+    
     if (window.confirm(`Apagar o projeto "${project.name}"?`)) {
       await removeProject(project.id);
     }

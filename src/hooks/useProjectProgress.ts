@@ -7,7 +7,6 @@ export interface ProgressInfo {
   percent: number;
 }
 
-// Hook que calcula o progresso de um projeto
 export function useProjectProgress(project: Project): ProgressInfo {
   return useMemo(() => {
     const total = project.tasks.length;
