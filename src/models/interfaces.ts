@@ -1,6 +1,5 @@
 import { TaskStatus } from "./Task";
 
-// Formato de uma tarefa tal como vem da API (JSON simples)
 export interface TaskData {
   id: string;
   title: string;
